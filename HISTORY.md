@@ -18,13 +18,18 @@
   - A new Aerodash mark (a ring with three speed lines) and a transparent, theme-aware favicon replaced the Feathermode feather.
   - localStorage keys renamed `fm-*` to `ad-*`; the Netlify form renamed `aerodash-waitlist`; footer now says
     "A Feathermode product".
-  - The password screen and its hash were kept as they were.
+  - The password screen and its hash were kept as they were, for the time being.
+
+## Lock screen removed (6 Nov 2026)
+
+- The preview password screen (markup, the SHA-256 lock check in `js/main.js`, and the `data-locked` styling) was
+  removed entirely. The page is now open to every visitor. Nothing else changed.
 
 ## Decisions to remember
 
 - Keep the original design: it is the Feathermode look, and Aerodash is a Feathermode product.
 - Work on `trunk` only; an `experimental` branch comes later when asked for.
-- The lock screen is a soft preview gate, not security.
+- There is no password screen; the page is public.
 
 ## Not done yet
 

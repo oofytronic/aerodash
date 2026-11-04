@@ -10,7 +10,7 @@ This site began as the previous Feathermode site (the "publishing home you actua
 palettes, Crimson Pro and DM Sans, rounded cards) is unchanged.
 
 - Static HTML, CSS and vanilla JavaScript. **No build step, no dependencies.**
-- A private preview: the page opens behind a soft **password screen** (see "Things to know").
+- The page is open to everyone — there is no password screen.
 
 ## Quick start
 
@@ -27,9 +27,9 @@ sign-ups when the site is hosted on Netlify.
 ## What is where
 
 ```
-index.html        the whole page: lock screen, header, hero, six sections, waitlist, footer
+index.html        the whole page: header, hero, six sections, waitlist, footer
 css/style.css     all styles (tokens for both palettes, then one labelled section per part of the page)
-js/main.js        lock screen, light/dark theme, waitlist form
+js/main.js        light/dark theme, waitlist form
 favicon.svg       favicon: transparent, switches colour with the browser's light or dark theme
 favicon.ico       transparent fallback (16/32/48)
 design.md         structure, look, content notes, to-do list
@@ -58,9 +58,8 @@ DM Sans (text), loaded from Google Fonts. Corners are rounded, with soft shadows
 | I want to… | Do this |
 | --- | --- |
 | Change the wording | Edit `index.html`. Every section is a plain `<section>` with an id the nav links to. |
-| Change or remove the password screen | The password is stored only as a SHA-256 hash in `LOCK_HASH` in `js/main.js`. Make a new one with `printf 'the password' \| sha256sum`. To remove the screen, delete the `#lockScreen` block in `index.html`, the lock code at the top of `js/main.js`, and the `data-locked` lines in the `<head>` script. |
 | Make the waitlist work somewhere else | The form posts to `/` for Netlify. Point `fetch('/', …)` in `js/main.js` (and the form's `action`) at your form service. |
-| Change the logo | The mark is inline SVG in three places in `index.html` (lock card, header) and in `favicon.svg`. It is a placeholder: a ring with three speed lines. |
+| Change the logo | The mark is inline SVG in `index.html` (header) and in `favicon.svg`. It is a placeholder: a ring with three speed lines. |
 
 ## Workflow
 
@@ -69,11 +68,8 @@ asked for.
 
 ## Things to know
 
-- **The lock screen is not security.** This is a static site, so the page's content ships to every visitor whether or
-  not they enter the password; the hash only keeps the plaintext password out of view-source. It is carried over
-  unchanged from the old site, so it is the same password. Remove it when the site goes public.
-- The localStorage keys changed from `fm-*` to `ad-*` (`ad-theme`, `ad-unlocked`), so people unlocked on the old
-  site must enter the password again.
+- The site had a soft preview password screen at first; it has been removed, so the page is open to everyone now.
+- The localStorage key changed from `fm-theme` to `ad-theme` for the saved light/dark choice.
 - The Aerodash mark and the copy are new and are a first draft for the author to review. The name is unchecked for
   trademarks and domains.
 - The "Compare" table of the old site (Feathermode against Books.by and Shopify) and its "Pricing" section were

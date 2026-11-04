@@ -34,7 +34,6 @@ only the words and the mark changed.
 ## To do
 
 - [ ] Review and edit the copy.
-- [ ] Decide whether the lock screen stays; remove it when the site goes public.
 - [ ] A final Aerodash mark and a social preview image (Open Graph); canonical URL once the domain is known.
 - [ ] Check the name Aerodash (trademarks, domain) before launch.
 - [ ] A real waitlist backend if not hosted on Netlify.

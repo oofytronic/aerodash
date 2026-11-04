@@ -16,12 +16,6 @@
     var mode = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'parchment-dark' : 'parchment-light');
     document.documentElement.setAttribute('data-palette', mode);
   } catch (e) {}
-  try {
-    var unlocked = localStorage.getItem('ad-unlocked') === '1';
-    document.documentElement.setAttribute('data-locked', unlocked ? 'false' : 'true');
-  } catch (e) {
-    document.documentElement.setAttribute('data-locked', 'true');
-  }
 })();
 </script>
 
@@ -35,20 +29,6 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- ── Lock screen ───────────────────────────────────────── -->
-  <div class="lock-screen" id="lockScreen">
-    <div class="lock-card">
-      <svg width="34" height="34" viewBox="0 0 64 64" fill="none" stroke="var(--color-accent)" stroke-width="3.2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="38" cy="32" r="17"/><circle cx="38" cy="32" r="4.5" fill="var(--color-accent)" stroke="none"/><path d="M5 23h17M2 32h20M9 41h13"/></svg>
-      <h1 class="lock-brand">Aerodash</h1>
-      <p class="lock-vision">An everything app you own and run: end-to-end encrypted, local-first and relay-driven, for creators, consumers and curators. This preview is private while we get it ready.</p>
-      <form class="lock-form" id="lockForm" novalidate>
-        <input type="password" id="lockPassword" placeholder="Password" autocomplete="off" required>
-        <button type="submit" class="btn-primary">Enter</button>
-      </form>
-      <p class="lock-error" id="lockError" role="alert"></p>
-    </div>
-  </div>
 
   <!-- ── Decorative ambient layer ──────────────────────────── -->
   <div class="sky" aria-hidden="true">

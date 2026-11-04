@@ -10,7 +10,7 @@ palettes) and was deliberately kept.
 3. Semantic HTML, CSS custom properties for every colour, size and space (the tokens at the top of `css/style.css`),
    functional-leaning vanilla JavaScript.
 4. Accessibility: keep the skip of motion under `prefers-reduced-motion`, visible focus styles, `aria-label`s on the
-   nav and the theme toggle, `role="alert"` on the lock error and `role="status"` on the form hint.
+   nav and the theme toggle, and `role="status"` on the form hint.
 5. Both palettes (`parchment-light`, `parchment-dark`) must keep working; test each.
 6. **Copy must stay true to the promises:** end-to-end encrypted, local-first, user-owned, user-operated,
    relay-driven, privacy-first, for creators, consumers and curators. Do not add claims (features, prices, dates,
@@ -18,11 +18,9 @@ palettes) and was deliberately kept.
 
 ## Traps
 
-- The **lock screen is a soft gate**, not security: all content ships to every visitor. Never put anything secret on
-  this page. The password exists only as a SHA-256 hash in `js/main.js`.
-- The inline `<script>` in `<head>` sets `data-palette` and `data-locked` before first paint; keep it, or the page
-  flashes the wrong theme or the lock.
-- localStorage keys are `ad-theme` and `ad-unlocked`. The waitlist form is a Netlify form named `aerodash-waitlist`
+- There is no lock screen or password: the page removed it and is open to everyone. Do not add one back without being asked.
+- The inline `<script>` in `<head>` sets `data-palette` before first paint; keep it, or the page flashes the wrong theme.
+- The localStorage key is `ad-theme`. The waitlist form is a Netlify form named `aerodash-waitlist`
   (the `name`, the hidden `form-name` and the string in `js/main.js` must match).
 - The CSS has one labelled section per part of the page; the "How it differs" section uses the `contrast-*` classes
   (it was the "Pricing" section; the compare-table styles were removed).
