@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke-linecap="round"><title>Aerodash</title>
+<style>.a{stroke:#16446f}.d{fill:#16446f}@media (prefers-color-scheme:dark){.a{stroke:#66a5e1}.d{fill:#66a5e1}}</style>
+<g class="a" stroke-width="3.6"><circle cx="38" cy="32" r="17"/><path d="M5 23h17M2 32h20M9 41h13"/></g>
+<circle class="d" cx="38" cy="32" r="5"/>
+</svg>
