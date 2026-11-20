@@ -1,5 +1,9 @@
 # History
 
+## Identities noted (20 Nov 2026)
+
+- `AGENTS.md` gained an **Identities** section (which persona is which, and the no-cross-linking rules).
+
 ## From the old Feathermode site to Aerodash (6 Nov 2026)
 
 - **Origin.** The site started life as the Feathermode site: a pitch for a user-owned writing and self-publishing
