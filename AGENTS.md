@@ -31,7 +31,8 @@ palettes) and was deliberately kept.
 
 The author works under separate identities. Keep them straight:
 
-- **Oofytronic**: the tech persona (`oofytronic-site`).
+- **Nimbus Nectar**: the tech persona (`nimbusnectar`, `nimbusnectar.com`). It replaced Oofytronic.
+- **Oofytronic**: now only a logo on a black landing page (`oofytronic-site`). No longer part of the Feathermode family.
 - **Feathermode**: the tech business (`feathermode-web`). It has customers, so it is the identity to protect most.
 - **R. H. Sattaur**: the author persona (`rhsattaur`, the Somium Solest site, the stories). Fiction lives on the sites; the
   author's non-fiction lives elsewhere.
@@ -42,7 +43,7 @@ Rules:
 
 1. **Only `rhsattaur` links to Remain Human** (nav, home section and footer). No other site links to it, mentions it or
    borrows its themes. Ask first before adding any other link.
-2. **Oofytronic and Feathermode do not link to, credit or mention** R. H. Sattaur, Remain Human or Somium Solest, and the
+2. **Nimbus Nectar and Feathermode do not link to, credit or mention** R. H. Sattaur, Remain Human or Somium Solest, and the
    author sites do not link to them, unless a link already exists. Ask before adding a new cross-link between any two identities.
 3. Do not put the author's private email address, or any personal details, in public pages, commits or external requests.
 4. Do not invent biography, lore or copy for any identity; ask when text was not supplied.

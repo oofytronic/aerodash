@@ -1,5 +1,9 @@
 # History
 
+## Nimbus Nectar replaces Oofytronic (24 Nov 2026)
+
+- The design system and tech persona moved from Oofytronic to **Nimbus Nectar** (repo `nimbusnectar`). Docs here now point there; `AGENTS.md` Identities was updated. Older entries below keep the old names.
+
 ## Identities noted (20 Nov 2026)
 
 - `AGENTS.md` gained an **Identities** section (which persona is which, and the no-cross-linking rules).
